@@ -39,7 +39,7 @@ public class ExclusaoCidadeMain {
 		
 		cadastro.remover(cidade);
 		
-		List<Cidade> listarFinal = cadastro.todos();
+		List<Cidade> listarFinal = cadastro.todas();
 		listarTodos(listarFinal);
 		
 	}
