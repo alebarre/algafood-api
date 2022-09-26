@@ -31,7 +31,7 @@ public class ExclusaoFormaPagamentoMain {
 		Restaurante restaurante = new Restaurante();
 		restaurante.setId(3L);
 		
-		cadastroRestaurante.remover(restaurante);
+		cadastroRestaurante.remover(restaurante.getId());
 		
 		List<Restaurante> listarFim = cadastroRestaurante.todos();
 		listarTodos(listarFim);

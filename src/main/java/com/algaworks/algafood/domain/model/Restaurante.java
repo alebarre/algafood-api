@@ -10,18 +10,18 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import org.hibernate.annotations.ManyToAny;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-@Entity
 @Data
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Entity
 public class Restaurante {
-	
-	@Id
+
 	@EqualsAndHashCode.Include
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	

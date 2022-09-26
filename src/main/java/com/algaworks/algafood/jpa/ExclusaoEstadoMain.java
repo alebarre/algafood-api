@@ -35,7 +35,7 @@ public class ExclusaoEstadoMain {
 		Estado estado = new Estado();
 		estado.setId(2L);
 		
-		cadastro.remover(estado);
+		cadastro.remover(estado.getId());
 		
 		List<Estado> listarFinal = cadastro.todos();
 		listarTodos(listarFinal);

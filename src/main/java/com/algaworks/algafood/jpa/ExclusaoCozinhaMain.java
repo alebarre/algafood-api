@@ -23,13 +23,15 @@ public class ExclusaoCozinhaMain {
 		
 		CozinhaRepository cozinhas = applicationContext.getBean(CozinhaRepository.class);		
 		
+		long removeId = 3;
+		
 		List<Cozinha> listar1 = cozinhas.todas();
 		listarTodos(listar1);
 		
 		Cozinha cozinha = new Cozinha();
-		cozinha.setId(3L);
+		cozinha.setId(removeId);
 		
-		cozinhas.remover(cozinha);
+		cozinhas.remover(removeId);
 		
 		List<Cozinha> listar2 = cozinhas.todas();
 		listarTodos(listar2);
